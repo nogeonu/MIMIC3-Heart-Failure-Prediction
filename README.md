@@ -122,14 +122,26 @@
 ## 📁 프로젝트 구조
 
 ```
-numpy_project/
-├── README.md                          # 프로젝트 설명서 (이 파일)
-├── HF_KNN_최고성능.ipynb              # 메인 분석 노트북
-├── data01.csv                         # MIMIC-III 데이터셋
-├── 프로젝트PPT.pdf                    # 프로젝트 발표 자료
-├── requirements.txt                   # 필요 패키지 목록
-├── .gitignore                         # Git 제외 파일
-└── assets/                            # 이미지 및 결과물
+MIMIC3-Heart-Failure-Prediction/
+├── 📄 README.md                       # 프로젝트 설명서 (이 파일)
+├── 📋 requirements.txt                # 필요 패키지 목록
+├── ⚖️ LICENSE                         # MIT 라이선스
+├── 🚫 .gitignore                      # Git 제외 파일
+│
+├── 📁 src/                            # 소스 코드
+│   └── 📓 HF_KNN_최고성능.ipynb       # 메인 분석 노트북
+│
+├── 📁 data/                           # 데이터 파일
+│   └── 📊 data01.csv                  # MIMIC-III 데이터셋
+│
+├── 📁 docs/                           # 문서
+│   ├── 📑 프로젝트PPT.pdf             # 프로젝트 발표 자료
+│   ├── 🤝 CONTRIBUTING.md             # 기여 가이드
+│   ├── 🚀 GITHUB_SETUP.md             # GitHub 업로드 가이드
+│   ├── 📁 PROJECT_STRUCTURE.md        # 프로젝트 구조 설명
+│   └── ⚡ QUICKSTART.md               # 빠른 시작 가이드
+│
+└── 📁 assets/                         # 이미지 및 결과물 (향후 추가)
     ├── roc_curve.png
     ├── confusion_matrix.png
     └── feature_importance.png
@@ -141,7 +153,7 @@ numpy_project/
 
 ```bash
 # 저장소 클론
-git clone https://github.com/your-username/MIMIC3-Heart-Failure-Prediction.git
+git clone https://github.com/nogeonu/MIMIC3-Heart-Failure-Prediction.git
 cd MIMIC3-Heart-Failure-Prediction
 
 # 가상환경 생성 (선택사항)
@@ -155,7 +167,7 @@ pip install -r requirements.txt
 ### 2. Jupyter Notebook 실행
 
 ```bash
-jupyter notebook HF_KNN_최고성능.ipynb
+jupyter notebook src/HF_KNN_최고성능.ipynb
 ```
 
 ### 3. 실행 순서
